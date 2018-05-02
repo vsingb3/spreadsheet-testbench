@@ -84,7 +84,6 @@ export class WorkspaceComponent implements OnInit, AfterViewInit {
   }
 
   intialiseSpreadsheet(inputJson?) {
-
     this.currentConfig = inputJson || this.kendoConfig["json"]["json1"];
     this.spreadsheet = new LeonardoSpreadsheet("WB1",this.container,{config:this.currentConfig,
       events:{},
@@ -96,26 +95,46 @@ export class WorkspaceComponent implements OnInit, AfterViewInit {
 
 
   showChanges(newConfiguration) {
-    let newJSON = this.spreadsheet.getState();
+    let currentState = this.spreadsheet.getState();
 
     if(newConfiguration["extractorOutputChanged"]){
       let data = newConfiguration["extractorOutput"];
-      this.spreadsheet.setData(data);
-      return;
+      this.currentConfig = this.spreadsheet.getState();
+      this.currentConfig.grid = data;
     }
     else if(newConfiguration["useCaseChanged"]){
       this.currentConfig = this.kendoConfig["json"][newConfiguration["useCase"]];
     }
     else{
-      this.currentConfig = this.mergeJSON(newJSON, newConfiguration);
+      this.currentConfig = this.mergeJSON(newConfiguration);
+
+      //If ribbon is same, call set state
+      if(currentState.ribbon.visible == this.currentConfig.ribbon.visible){
+        this.spreadsheet.setState(this.currentConfig);
+        return;
+      }
     }
 
-    this.spreadsheet.destroy();
-    this.intialiseSpreadsheet(this.currentConfig);
+    try {
+      this.spreadsheet.destroy();
+      this.spreadsheet = null;
+      this.intialiseSpreadsheet(this.currentConfig);
+    } catch (exception) {
+
+      if(this.spreadsheet){
+        while (this.container.firstChild) {
+          this.container.removeChild(this.container.firstChild);
+        }
+        this.spreadsheet = null;
+        this.intialiseSpreadsheet(currentState);
+      }
+
+      alert("Provided input is not valid. Please check and provide a valid input");
+    }
   }
 
-  mergeJSON(spreadsheetconfig, changesconfig) {
-    let newJSON = spreadsheetconfig;
+  mergeJSON(changesconfig) {
+    let newJSON = this.spreadsheet.getState();
     for (let key in changesconfig) {
       //for checkbox value
       if (typeof changesconfig[key] == "string" && changesconfig[key] == "")
@@ -153,25 +172,4 @@ export class WorkspaceComponent implements OnInit, AfterViewInit {
     newjson["ribbon"]["visible"] = visibility;
     return newjson;
   }
-
-  adjustDim(dimJSON) {
-    if (dimJSON.contWidth!="") {
-      this.container.style.width = dimJSON.contWidth;
-    }
-    else{
-      this.container.style.width = "100%";
-    }
-    if (dimJSON.contHeight) {
-      this.container.style.height = dimJSON.contHeight;
-    }
-    else{
-      this.container.style.height = "100%";
-    }
-   this.refreshSpreadsheet();
-  }
-
-  refreshSpreadsheet(){
-    // this.spreadsheet.refresh();
-  }
-
 }

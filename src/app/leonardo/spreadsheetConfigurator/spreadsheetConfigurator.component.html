@@ -8,7 +8,7 @@
                     <div *ngIf="element.type == 'checkbox'" class="switch">
                         <label *ngIf="element.type == 'checkbox'" class="col-sm-6 control-label">{{element.name}}</label>
                         <div class="col-sm-5 col-sm-offset-1" *ngIf="element.type == 'checkbox'">
-                            <input class="form-control " id="{{element.id}}" name="{{element.id}}" type="{{element.type}}" [checked]="inpConfigObject[section.name][element['id']]"
+                            <input class="form-control" id="{{element.id}}" name="{{element.id}}" type="{{element.type}}" [checked]="inpConfigObject[section.name][element['id']]"
                                 (change)="setVal(!inpConfigObject[section.name][element['id']],element['id'],section)"><i></i>
                             <span [hidden]="!inpConfigObject[section.name][element['id']]">True</span>
                             <span [hidden]="inpConfigObject[section.name][element['id']]">False</span>
@@ -33,7 +33,7 @@
                         </textarea>
                     </div>
                 </div>
-                <div class="text-center col-sm-4 col-sm-offset-4">
+                <div class="text-center col-sm-4 col-sm-offset-4" *ngIf="section.name == 'initialConfig'">
                     <button type="submit" class=" btn btn-primary pull-right"> Apply </button>
                 </div>
             </form>

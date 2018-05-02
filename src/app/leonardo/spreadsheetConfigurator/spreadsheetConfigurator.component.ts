@@ -28,7 +28,11 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
             for (let elem of section.configElem) {
                 let inpElement = elem;
                 if (inpElement["type"] == "checkbox") {
-                    document.querySelector("#" + inpElement["id"] + "+i").addEventListener("click", function () { console.log(this.inpConfigObject[section.name][inpElement["id"]]); this.inpConfigObject[section.name][inpElement["id"]] = !this.inpConfigObject[section.name][inpElement["id"]] }.bind(this));
+                    document.querySelector("#" + inpElement["id"] + "+i").addEventListener("click", function () {
+                        let newValue = !this.inpConfigObject[section.name][inpElement["id"]];
+                        this.inpConfigObject[section.name][inpElement["id"]] = newValue;
+                        this.configJSONchanged.emit(this.inpConfigObject["kendoConfig"]);
+                    }.bind(this));
                 }
             }
         }
@@ -79,9 +83,6 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
         }
         return inputJson.grid.sheets[activesheetIndex].showGridLines;
     }
-    setVal(value, id, section) {
-        this.inpConfigObject[section.name][id] = value;
-    }
 
     setConfigJSON(section) {
 
@@ -108,9 +109,5 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
         newConfig["useCase"] = dataType;
         this.setDefaultConfigurations(dataType);
         this.configJSONchanged.emit(newConfig);
-    }
-
-    setContainerDim() {
-        
     }
 }
