@@ -488,7 +488,7 @@
 										<item type="ItemHeader" disabled="true" text="Borders"/>
 										<item type="IconAndText" text="Bottom Border" ak="O" itemValue = "bottomBorder">
 											<icon wd="16px" ht="16px" src="dist/assets/ribbon/sprites/excel/home/font_sectionitems.png">
-												<imgcrop left="-4px" top="-5px"/>
+												<imgcrop left="-4px" top="-127px"/>
 											</icon>
 										</item>
 										<item type="IconAndText" text="Top Border" ak="P" itemValue = "topBorder">
