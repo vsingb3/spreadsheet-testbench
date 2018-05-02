@@ -11,6 +11,7 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
     @Input() configuratorJSON: any;
     @Input() kendoConfig: any;
     @Output() configJSONchanged: EventEmitter<any> = new EventEmitter();
+    @Output() getDataEvent: EventEmitter<any> = new EventEmitter();
     inpConfigObject;
     constructor() {
         this.inpConfigObject = {};
@@ -83,21 +84,24 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
 
     setConfigJSON(section) {
 
-        try{
-            if(section.name == "kendoConfig"){
-                this.configJSONchanged.emit(this.inpConfigObject["kendoConfig"]);
-            }
-            else if(section.name == "initialConfig"){
-                let data = JSON.parse(this.inpConfigObject["initialConfig"]["extractorOutput"]);
-                let newConfig ={};
-                newConfig["extractorOutputChanged"] = true;
-                newConfig["extractorOutput"] = data;
-                this.configJSONchanged.emit(newConfig);
-            }
-
-        }catch(exception){
-            alert("Provided Input is not a valid JSON");
+        try {
+          let data = JSON.parse(this.inpConfigObject["initialConfig"]["extractorOutput"]);
+          let newConfig = {};
+          newConfig["extractorOutputChanged"] = true;
+          newConfig["extractorOutput"] = data;
+          this.configJSONchanged.emit(newConfig);
+        } catch (exception) {
+          alert("Provided Input is not a valid JSON");
         }
+    }
+
+    updateData(){
+        this.getDataEvent.emit(true);
+    }
+
+    updateTextArea(data){
+        let stringData = JSON.stringify(data, null, 2);
+        this.inpConfigObject["initialConfig"]["extractorOutput"] = stringData;
     }
     changeType(event){
         let dataType = event.target.value;

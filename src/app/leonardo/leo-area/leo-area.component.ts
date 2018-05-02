@@ -13,6 +13,7 @@ export class LeoAreaComponent implements OnInit {
   @Input() id: string;
   @Input() questionConfig: any;
   @ViewChild('workspace') workspace;
+  @ViewChild('spreadsheetConfigurator') spreadsheetConfigurator;
   configuratorJSON: any;
   kendoConfig: any;
   configuratorVisible: boolean;
@@ -29,6 +30,11 @@ export class LeoAreaComponent implements OnInit {
 
   configJSONchangedListener(configJSON) {
     this.workspace.showChanges(configJSON);
+  }
+
+  getDataEventListener(){
+    let data=  this.workspace.getData();
+    this.spreadsheetConfigurator.updateTextArea(data);
   }
 
   toggleConfiguratorPane(configVisible) {

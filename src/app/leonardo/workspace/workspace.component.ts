@@ -172,4 +172,8 @@ export class WorkspaceComponent implements OnInit, AfterViewInit {
     newjson["ribbon"]["visible"] = visibility;
     return newjson;
   }
+
+  getData(){
+    return this.spreadsheet.getData();
+  }
 }

@@ -3,7 +3,7 @@
     <div class="panel panel-default" *ngFor="let section of configuratorJSON">
         <div class="panel-heading">{{section.heading}}</div>
         <div class="panel-body">
-            <form #confForm="ngForm" class="form-horizontal" (ngSubmit)="setConfigJSON(section)">
+            <form #confForm="ngForm" class="form-horizontal">
                 <div *ngFor="let element of section.configElem" class=" form-group">
                     <div *ngIf="element.type == 'checkbox'" class="switch">
                         <label *ngIf="element.type == 'checkbox'" class="col-sm-6 control-label">{{element.name}}</label>
@@ -33,9 +33,13 @@
                         </textarea>
                     </div>
                 </div>
-                <div class="text-center col-sm-4 col-sm-offset-4" *ngIf="section.name == 'initialConfig'">
-                    <button type="submit" class=" btn btn-primary pull-right"> Apply </button>
+                <div class="text-center col-sm-4" *ngIf="section.name == 'initialConfig'">
+                    <button type="submit" class=" btn btn-primary pull-right" (click)="updateData()"> Get State </button>
                 </div>
+                <div class="text-center col-sm-4 col-sm-offset-4" *ngIf="section.name == 'initialConfig'" (click)="setConfigJSON(section)" >
+                    <button type="submit" class=" btn btn-primary pull-right"> Set State </button>
+                </div>
+                
             </form>
         </div>
     </div>
