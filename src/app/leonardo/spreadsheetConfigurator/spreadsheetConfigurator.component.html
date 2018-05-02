@@ -1,0 +1,42 @@
+<div #questionHost class=" questionHost">
+
+    <div class="panel panel-default" *ngFor="let section of configuratorJSON">
+        <div class="panel-heading">{{section.heading}}</div>
+        <div class="panel-body">
+            <form #confForm="ngForm" class="form-horizontal" (ngSubmit)="setConfigJSON(section)">
+                <div *ngFor="let element of section.configElem" class=" form-group">
+                    <div *ngIf="element.type == 'checkbox'" class="switch">
+                        <label *ngIf="element.type == 'checkbox'" class="col-sm-6 control-label">{{element.name}}</label>
+                        <div class="col-sm-5 col-sm-offset-1" *ngIf="element.type == 'checkbox'">
+                            <input class="form-control " id="{{element.id}}" name="{{element.id}}" type="{{element.type}}" [checked]="inpConfigObject[section.name][element['id']]"
+                                (change)="setVal(!inpConfigObject[section.name][element['id']],element['id'],section)"><i></i>
+                            <span [hidden]="!inpConfigObject[section.name][element['id']]">True</span>
+                            <span [hidden]="inpConfigObject[section.name][element['id']]">False</span>
+                        </div>
+
+                    </div>
+                    <label *ngIf="element.type == 'text'" class="col-sm-6 control-label">{{element.name}}</label>
+                    <div class="col-sm-4 col-sm-offset-1" *ngIf="element.type == 'text'">
+                        <input class="form-control" id="{{element.id}}" name="{{element.id}}" type="{{element.type}}" [(ngModel)]="inpConfigObject[section.name][element['id']]">
+                    </div>
+                    <label *ngIf="element.type == 'dropdown'" class="col-sm-6">{{element.name}}</label>
+                    <div class="col-sm-4 col-sm-offset-1" *ngIf="element.type == 'dropdown'" (change)="changeType($event)">
+                        <select class="form-control" id="{{element.id}}" name="{{element.id}}" [(ngModel)]="inpConfigObject[section.name][element['id']]">
+                            <option *ngFor="let option of element.values" value="{{option}}">
+                                    {{option}}
+                            </option>
+                        </select>
+                    </div>
+                    <label *ngIf="element.type == 'textarea'" class="col-sm-8">{{element.name}}</label>
+                    <div class="col-sm-12" *ngIf="element.type == 'textarea'">
+                        <textarea rows="5" cols="10" class="form-control" id="{{element.id}}" name="{{element.id}}" [(ngModel)]="inpConfigObject[section.name][element['id']]">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="text-center col-sm-4 col-sm-offset-4">
+                    <button type="submit" class=" btn btn-primary pull-right"> Apply </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

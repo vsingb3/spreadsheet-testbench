@@ -1,0 +1,80 @@
+.contentWrapper{
+    height: calc(100% - 54px);
+    width: 100%;
+    background-color: #ececec;
+}
+
+.appconatiner{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.workspaceWrapper{
+    height: 100%;
+}
+
+.split-pane-content-primary{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.split-pane-content-secondary{
+    height: 100%;
+    width: 100%;
+}
+
+.questionWrapper{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.contentWrapper.verticalView{
+    overflow-y: auto;
+    background-color: #fff;
+
+    .questionWrapper{
+        height: auto;
+    }
+}
+
+.configuratorpane{
+    width:374px;
+    height: 100%;
+    overflow: auto;
+    float:left;
+    background: white;
+}
+
+.spreadsheetpane{
+    width:calc(100% - 411px);
+    height: 100%;
+    background: white;
+}
+.tooglebar{
+    height: 100%;
+    width: 30px;
+    color: #bbbbbb;
+    background: #f7f7f7;
+    float: left;
+    border-left: 1px solid lightgrey;
+    button{
+        border: transparent;
+        background: transparent;
+        font-weight: bold;
+        width: 100%;
+        border: 1px dashed transparent;
+    }
+    button:hover {
+        border: 1px dashed #bbbbbb;
+    }
+}
+
+.hideConfigPane{
+    width:0%;
+}
+.expandSpreadsheetPane{
+    width:calc(100% - 37px);
+}
