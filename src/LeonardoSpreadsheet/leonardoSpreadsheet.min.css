@@ -15579,6 +15579,9 @@ textarea.k-textbox,
 .k-widget {
   border: none;
 }
+.k-widget .k-spreadsheet-action-bar .k-spreadsheet-formula-input {
+  cursor: text !important;
+}
 .k-widget .k-tooltip {
   padding: 0px;
 }
