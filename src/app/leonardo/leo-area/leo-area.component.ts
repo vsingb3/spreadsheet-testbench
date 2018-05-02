@@ -43,17 +43,7 @@ export class LeoAreaComponent implements OnInit {
       document.querySelector(".spreadsheetpane").classList.add("expandSpreadsheetPane");
       this.toogleBtnText = ">>";
     }
-    this.workspace.refreshSpreadsheet();
   }
-
-  containerDimChangedListener(containerDimJSON) {
-    this.workspace.adjustDim(containerDimJSON);
-  }
-
-  verticalPaneResizeListener() {
-    this.workspace.refreshSpreadsheet();
-  }
-
 
   //   showChanges(){
 

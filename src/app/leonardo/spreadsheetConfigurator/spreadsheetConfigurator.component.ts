@@ -11,12 +11,9 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
     @Input() configuratorJSON: any;
     @Input() kendoConfig: any;
     @Output() configJSONchanged: EventEmitter<any> = new EventEmitter();
-    @Output() containerDimChanged: EventEmitter<any> = new EventEmitter();
     inpConfigObject;
-    inpContainerDimObj;
     constructor() {
         this.inpConfigObject = {};
-        this.inpContainerDimObj = {};
     }
 
     ngOnInit() {
