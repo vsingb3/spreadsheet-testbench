@@ -11,9 +11,9 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "libs/RibbonAssets"
+        "LeonardoSpreadsheet"
       ],
-      "index": "index.html",
+      "index": "heroku.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",

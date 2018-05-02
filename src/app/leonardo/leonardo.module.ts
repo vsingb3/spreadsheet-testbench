@@ -5,10 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { LeonardoComponent } from './leonardo.component';
 import { SpreadsheetConfiguratorComponent } from './spreadsheetConfigurator/spreadsheetConfigurator.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
-
 import { LeoAreaComponent } from './leo-area/leo-area.component';
-
-import { SplitPaneModule } from './verticalSplitter/ng2-split-pane';
 import { LeoHeaderComponent } from './leo-header/leo-header.component';
 
 export const leoRoutes: Routes = [
@@ -21,7 +18,6 @@ export const leoRoutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    SplitPaneModule,
     FormsModule,
     RouterModule
   ],
