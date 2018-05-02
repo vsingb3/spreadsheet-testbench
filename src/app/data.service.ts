@@ -408,7 +408,7 @@ export class DataService {
             }
           ],
           json :{
-              json1: {
+              json2: {
                 "meta": {
                     "schema": "v0.1"
                 },
@@ -498,6 +498,7 @@ export class DataService {
                                       "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -533,6 +534,7 @@ export class DataService {
                                       "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -568,6 +570,7 @@ export class DataService {
                                       "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -603,6 +606,7 @@ export class DataService {
                                       "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -638,6 +642,7 @@ export class DataService {
                                       "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -673,6 +678,7 @@ export class DataService {
                                       "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -708,6 +714,7 @@ export class DataService {
                                       "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -1706,6 +1713,7 @@ export class DataService {
                                       "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -1739,8 +1747,10 @@ export class DataService {
                                     "formula": "SUM(B3:B5)",
                                     "ref": "B6",
                                     "style": {
+                                      "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -1773,8 +1783,10 @@ export class DataService {
                                     "formula": "SUM(C3:C5)",
                                     "ref": "C6",
                                     "style": {
+                                      "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -1807,8 +1819,10 @@ export class DataService {
                                     "formula": "SUM(D3:D5)",
                                     "ref": "D6",
                                     "style": {
+                                      "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -1841,8 +1855,10 @@ export class DataService {
                                     "formula": "SUM(E3:E5)",
                                     "ref": "E6",
                                     "style": {
+                                      "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -1875,8 +1891,10 @@ export class DataService {
                                     "formula": "SUM(F3:F5)",
                                     "ref": "F6",
                                     "style": {
+                                      "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -1909,8 +1927,10 @@ export class DataService {
                                     "formula": "POWER(D6, 2)*E6",
                                     "ref": "G6",
                                     "style": {
+                                      "background": "#e7e6e6",
                                       "textAlign": "center",
                                       "verticalAlign": "middle",
+                                      "locked" : true,
                                       "border": {
                                         "left": {
                                           "clr": "#000000",
@@ -2664,7 +2684,7 @@ export class DataService {
                     }
                 }
               },
-              json2:{
+              json3:{
                 "meta": {
                     "schema": "v0.1"
                 },
@@ -2673,24 +2693,24 @@ export class DataService {
                     "type": "default"
                 },
                 "ribbon": {
-                    "visible": false,
+                    "visible": true,
                     "collapsed": false,
                     "type": "type1"
                 },
                 "formulabar": {
-                    "visible": false,
+                    "visible": true,
                     "namebox": false,
                     "expanded": false
                 },
                 "sheetbar": {
-                    "visible": false,
+                    "visible": true,
                     "allowInsertDelete": true,
                     "allowRename": false
                 },
                 "grid": {
                     "activeSheet": "Sheet2",
-                    "rowHeader": false,
-                    "colHeader": false,
+                    "rowHeader": true,
+                    "colHeader": true,
                     "defaults": {
                         "columnWidth": 64,
                         "rowHeight": 20,
@@ -5305,6 +5325,2134 @@ export class DataService {
                           }
                     }
                 }
+              },
+              json1:{
+                "meta": {
+                    "schema": "v0.1"
+                },
+                "name": "sampleXL.xlsx",
+                "contextMenu": {
+                    "type": "default"
+                },
+                "ribbon": {
+                    "visible": true,
+                    "collapsed": false,
+                    "type": "type1"
+                },
+                "formulabar": {
+                    "visible": true,
+                    "namebox": false,
+                    "expanded": false
+                },
+                "sheetbar": {
+                    "visible": true,
+                    "allowInsertDelete": true,
+                    "allowRename": false
+                },
+                "grid": {
+                  "activeSheet": "Solution",
+                  "rowHeader": true,
+                  "colHeader": true,
+                  "defaults": {
+                    "rowHeight": 20,
+                    "columnWidth": 64
+                  },
+                  "sheets": {
+                    "0": {
+                      "name": "Solution",
+                      "selection": "A1:C1",
+                      "activeCell": "A1:C1",
+                      "frozenRows": 0,
+                      "frozenColumns": 0,
+                      "showGridLines": true,
+                      "mergedCells": [
+                        "A1:C1",
+                        "A2:C2",
+                        "A3:C3",
+                        "B4:C4"
+                      ],
+                      "defaults": {
+                        "cellFontAttrs": {
+                          "family": "Arial",
+                          "size": "12"
+                        }
+                      },
+                      "columns": {
+                        "0": {
+                          "visible": true,
+                          "index": 0,
+                          "width": 154
+                        },
+                        "1": {
+                          "visible": true,
+                          "index": 1,
+                          "width": 119
+                        },
+                        "2": {
+                          "visible": true,
+                          "index": 2,
+                          "width": 98
+                        }
+                      },
+                      "rows": {
+                        "0": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Fantasy Group",
+                              "index": 0,
+                              "ref": "A1",
+                              "style": {
+                                "background": "#f2f2f2",
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "1": {
+                              "index": 1,
+                              "ref": "B1",
+                              "style": {
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C1",
+                              "style": {
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            }
+                          },
+                          "index": 0
+                        },
+                        "1": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Trial Balance",
+                              "index": 0,
+                              "ref": "A2",
+                              "style": {
+                                "background": "#f2f2f2",
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "1": {
+                              "index": 1,
+                              "ref": "B2",
+                              "style": {
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C2",
+                              "style": {
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            }
+                          },
+                          "index": 1
+                        },
+                        "2": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "March 31, 2018",
+                              "index": 0,
+                              "ref": "A3",
+                              "style": {
+                                "background": "#f2f2f2",
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "1": {
+                              "index": 1,
+                              "ref": "B3",
+                              "style": {
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C3",
+                              "style": {
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            }
+                          },
+                          "index": 2
+                        },
+                        "3": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "index": 0,
+                              "ref": "A4",
+                              "style": {
+                                "background": "#f2f2f2",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": "Balance",
+                              "index": 1,
+                              "ref": "B4",
+                              "style": {
+                                "background": "#f2f2f2",
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C4",
+                              "style": {
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            }
+                          },
+                          "index": 3
+                        },
+                        "4": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Account Title",
+                              "index": 0,
+                              "ref": "A5",
+                              "style": {
+                                "background": "#f2f2f2",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": "Debit ",
+                              "index": 1,
+                              "ref": "B5",
+                              "style": {
+                                "background": "#f2f2f2",
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "2": {
+                              "value": "Credit",
+                              "index": 2,
+                              "ref": "C5",
+                              "style": {
+                                "background": "#f2f2f2",
+                                "textAlign": "center",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            }
+                          },
+                          "index": 4
+                        },
+                        "5": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Cash",
+                              "index": 0,
+                              "ref": "A6",
+                              "style": {
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 17300,
+                              "index": 1,
+                              "ref": "B6",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C6",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 5
+                        },
+                        "6": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Accounts Receivable",
+                              "index": 0,
+                              "ref": "A7",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 33550,
+                              "index": 1,
+                              "ref": "B7",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C7",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 6
+                        },
+                        "7": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Supplies",
+                              "index": 0,
+                              "ref": "A8",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 6910,
+                              "index": 1,
+                              "ref": "B8",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C8",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 7
+                        },
+                        "8": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Prepaid Insurance",
+                              "index": 0,
+                              "ref": "A9",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 1960,
+                              "index": 1,
+                              "ref": "B9",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C9",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 8
+                        },
+                        "9": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Equipment",
+                              "index": 0,
+                              "ref": "A10",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 176650,
+                              "index": 1,
+                              "ref": "B10",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C10",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 9
+                        },
+                        "10": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Accounts Payable",
+                              "index": 0,
+                              "ref": "A11",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "index": 1,
+                              "ref": "B11",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "value": 26000,
+                              "index": 2,
+                              "ref": "C11",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 10
+                        },
+                        "11": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Notes Payable",
+                              "index": 0,
+                              "ref": "A12",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "index": 1,
+                              "ref": "B12",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "value": 88090,
+                              "index": 2,
+                              "ref": "C12",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 11
+                        },
+                        "12": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Owner's, Capital",
+                              "index": 0,
+                              "ref": "A13",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "index": 1,
+                              "ref": "B13",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "value": 145835,
+                              "index": 2,
+                              "ref": "C13",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 12
+                        },
+                        "13": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Owner's, Drawing",
+                              "index": 0,
+                              "ref": "A14",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 114920,
+                              "index": 1,
+                              "ref": "B14",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C14",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 13
+                        },
+                        "14": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Fees Earned",
+                              "index": 0,
+                              "ref": "A15",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "index": 1,
+                              "ref": "B15",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "value": 409255,
+                              "index": 2,
+                              "ref": "C15",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 14
+                        },
+                        "15": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Wages Expense",
+                              "index": 0,
+                              "ref": "A16",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 243250,
+                              "index": 1,
+                              "ref": "B16",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C16",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 15
+                        },
+                        "16": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Rent Expense",
+                              "index": 0,
+                              "ref": "A17",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 46870,
+                              "index": 1,
+                              "ref": "B17",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C17",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 16
+                        },
+                        "17": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Advertising Expense",
+                              "index": 0,
+                              "ref": "A18",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 22930,
+                              "index": 1,
+                              "ref": "B18",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C18",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 17
+                        },
+                        "18": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Misc. Expense",
+                              "index": 0,
+                              "ref": "A19",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 4840,
+                              "index": 1,
+                              "ref": "B19",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "index": 2,
+                              "ref": "C19",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "verticalAlign": "top",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 18
+                        },
+                        "19": {
+                          "visible": true,
+                          "cells": {
+                            "0": {
+                              "value": "Total",
+                              "index": 0,
+                              "ref": "A20",
+                              "style": {
+                                "verticalAlign": "middle",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11,
+                                  "bold": true
+                                }
+                              }
+                            },
+                            "1": {
+                              "value": 669180,
+                              "index": 1,
+                              "formula": "SUM(B6:B19)",
+                              "ref": "B20",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            },
+                            "2": {
+                              "value": 669180,
+                              "index": 2,
+                              "formula": "SUM(C6:C19)",
+                              "ref": "C20",
+                              "style": {
+                                "format": "\"$\"#,#.00;-\"$\"#,#.00",
+                                "border": {
+                                  "left": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "top": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "bottom": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  },
+                                  "right": {
+                                    "clr": "#000000",
+                                    "type": "thin"
+                                  }
+                                }
+                              },
+                              "fontAttrs": {
+                                "def": {
+                                  "family": "Calibri",
+                                  "size": 11
+                                }
+                              }
+                            }
+                          },
+                          "index": 19
+                        }
+                      }
+                    }
+                  }
+                }
               }
           }
         },
@@ -5317,7 +7465,7 @@ export class DataService {
                         type: "dropdown",
                         name: "Select Use Case",
                         id: "useCase",
-                        values : ["json1","json2"]
+                        values : ["json1","json2","json3"]
                     },
                     {
                         type: "textarea",
