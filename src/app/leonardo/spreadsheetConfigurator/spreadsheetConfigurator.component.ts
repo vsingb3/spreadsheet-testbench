@@ -10,8 +10,10 @@ declare var Leonardo: any;
 export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
     @Input() configuratorJSON: any;
     @Input() kendoConfig: any;
-    @Output() configJSONchanged: EventEmitter<any> = new EventEmitter();
+    @Output() configChanged: EventEmitter<any> = new EventEmitter();
+    @Output() changeJsonEvent: EventEmitter<any> = new EventEmitter();
     @Output() getDataEvent: EventEmitter<any> = new EventEmitter();
+    @Output() setDataEvent: EventEmitter<any> = new EventEmitter();
     inpConfigObject;
     constructor() {
         this.inpConfigObject = {};
@@ -29,7 +31,7 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
                     document.querySelector("#" + inpElement["id"] + "+i").addEventListener("click", function () {
                         let newValue = !this.inpConfigObject[section.name][inpElement["id"]];
                         this.inpConfigObject[section.name][inpElement["id"]] = newValue;
-                        this.configJSONchanged.emit(this.inpConfigObject["kendoConfig"]);
+                        this.configChanged.emit(this.inpConfigObject["kendoConfig"]);
                     }.bind(this));
                 }
             }
@@ -57,6 +59,7 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
             }
         }
     }
+
     setInitialConfiguration(inputJson){
 
         let defaultValues = {};
@@ -82,14 +85,10 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
         return inputJson.grid.sheets[activesheetIndex].showGridLines;
     }
 
-    setConfigJSON(section) {
-
+    setExtractorOutput() {
         try {
-          let data = JSON.parse(this.inpConfigObject["initialConfig"]["extractorOutput"]);
-          let newConfig = {};
-          newConfig["extractorOutputChanged"] = true;
-          newConfig["extractorOutput"] = data;
-          this.configJSONchanged.emit(newConfig);
+          let extractorOutput = JSON.parse(this.inpConfigObject["initialConfig"]["extractorOutput"]);
+          this.setDataEvent.emit(extractorOutput);
         } catch (exception) {
           alert("Provided Input is not a valid JSON");
         }
@@ -103,12 +102,8 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
         let stringData = JSON.stringify(data, null, 2);
         this.inpConfigObject["initialConfig"]["extractorOutput"] = stringData;
     }
-    changeType(event){
+    changeJson(event){
         let dataType = event.target.value;
-        let newConfig ={};
-        newConfig["useCaseChanged"] = true;
-        newConfig["useCase"] = dataType;
-        this.setDefaultConfigurations(dataType);
-        this.configJSONchanged.emit(newConfig);
+        this.changeJsonEvent.emit(dataType);
     }
 }

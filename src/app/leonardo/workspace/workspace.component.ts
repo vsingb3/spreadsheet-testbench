@@ -12,7 +12,6 @@ declare var LeonardoSpreadsheet: any;
 export class WorkspaceComponent implements OnInit, AfterViewInit {
   @Input() kendoConfig: any;
   @ViewChild('leoHost') leoHost: ElementRef;
-  @Output() gridEvent: EventEmitter<Object> = new EventEmitter();
   spreadsheet;
   configMap:any;
   container:any;
@@ -90,46 +89,22 @@ export class WorkspaceComponent implements OnInit, AfterViewInit {
       uiStyle: {
         horizontalAlignment: 'center'
       }});
-    this.spreadsheet.init()
+    this.spreadsheet.init();
   }
 
 
   showChanges(newConfiguration) {
     let currentState = this.spreadsheet.getState();
+    this.currentConfig = this.mergeJSON(newConfiguration);
 
-    if(newConfiguration["extractorOutputChanged"]){
-      let data = newConfiguration["extractorOutput"];
-      this.currentConfig = this.spreadsheet.getState();
-      this.currentConfig.grid = data;
-    }
-    else if(newConfiguration["useCaseChanged"]){
-      this.currentConfig = this.kendoConfig["json"][newConfiguration["useCase"]];
+    //If ribbon is not changed, call set state
+    if(currentState.ribbon.visible == this.currentConfig.ribbon.visible){
+      this.spreadsheet.setState(this.currentConfig);
     }
     else{
-      this.currentConfig = this.mergeJSON(newConfiguration);
-
-      //If ribbon is same, call set state
-      if(currentState.ribbon.visible == this.currentConfig.ribbon.visible){
-        this.spreadsheet.setState(this.currentConfig);
-        return;
-      }
-    }
-
-    try {
       this.spreadsheet.destroy();
       this.spreadsheet = null;
       this.intialiseSpreadsheet(this.currentConfig);
-    } catch (exception) {
-
-      if(this.spreadsheet){
-        while (this.container.firstChild) {
-          this.container.removeChild(this.container.firstChild);
-        }
-        this.spreadsheet = null;
-        this.intialiseSpreadsheet(currentState);
-      }
-
-      alert("Provided input is not valid. Please check and provide a valid input");
     }
   }
 
@@ -175,5 +150,35 @@ export class WorkspaceComponent implements OnInit, AfterViewInit {
 
   getData(){
     return this.spreadsheet.getData();
+  }
+
+  setData(extractorOutput){
+    let currentState = this.spreadsheet.getState();
+    this.currentConfig = this.spreadsheet.getState();
+    this.currentConfig.grid = extractorOutput;
+
+    try {
+      this.spreadsheet.destroy();
+      this.spreadsheet = null;
+      this.intialiseSpreadsheet(this.currentConfig);
+    } catch (exception) {
+
+      if(this.spreadsheet){
+        while (this.container.firstChild) {
+          this.container.removeChild(this.container.firstChild);
+        }
+        this.spreadsheet = null;
+        this.intialiseSpreadsheet(currentState);
+      }
+
+      alert("Provided input is not valid. Please check and provide a valid input");
+    }
+  }
+
+  changeJson(type){
+    this.currentConfig = this.kendoConfig["json"][type];
+    this.spreadsheet.destroy();
+    this.spreadsheet = null;
+    this.intialiseSpreadsheet(this.currentConfig);
   }
 }

@@ -10,7 +10,7 @@
   </vertical-split-pane> -->
   <div class="appconatiner">
     <div class="configuratorpane">
-      <app-spreadsheetConfigurator  #spreadsheetConfigurator class="questionWrapper" [configuratorJSON]='configuratorJSON' [kendoConfig]='kendoConfig' (configJSONchanged)="configJSONchangedListener($event)" (getDataEvent)="getDataEventListener($event)"></app-spreadsheetConfigurator>
+      <app-spreadsheetConfigurator  #spreadsheetConfigurator class="questionWrapper" [configuratorJSON]='configuratorJSON' [kendoConfig]='kendoConfig' (configChanged)="configChangedListener($event)" (getDataEvent)="getDataEventListener($event)" (setDataEvent)="setDataEventListener($event)" (changeJsonEvent)="changeJsonListener($event)"></app-spreadsheetConfigurator>
     </div>
     <div class="tooglebar"><button class="togglePaneButton" (click) = "toggleConfiguratorPane(!configuratorVisible)">{{toogleBtnText}}</button></div>
     <div class="spreadsheetpane">

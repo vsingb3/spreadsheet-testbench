@@ -27,14 +27,21 @@ export class LeoAreaComponent implements OnInit {
     this.kendoConfig = this.questionConfig["kendoConfig"];
   }
 
-
-  configJSONchangedListener(configJSON) {
+  configChangedListener(configJSON) {
     this.workspace.showChanges(configJSON);
+  }
+
+  changeJsonListener(type){
+    this.workspace.changeJson(type);
   }
 
   getDataEventListener(){
     let data=  this.workspace.getData();
     this.spreadsheetConfigurator.updateTextArea(data);
+  }
+
+  setDataEventListener(data){
+    this.workspace.setData(data);
   }
 
   toggleConfiguratorPane(configVisible) {
@@ -50,14 +57,5 @@ export class LeoAreaComponent implements OnInit {
       this.toogleBtnText = ">>";
     }
   }
-
-  //   showChanges(){
-
-  //     let latestConfig = jsonconfigurator.mergeJSON(config,spreadsheetConfigJSON);
-  //     $("#spreadsheet").data("kendoSpreadsheet").destroy()
-  //     $("#spreadsheet").empty();
-  //     kendoInstance = new kendoWrapper (latestConfig).init();
-  // return false;
-  // }
 }
 
