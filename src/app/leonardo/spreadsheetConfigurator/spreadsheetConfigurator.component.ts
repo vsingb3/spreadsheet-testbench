@@ -105,5 +105,7 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
     changeJson(event){
         let dataType = event.target.value;
         this.changeJsonEvent.emit(dataType);
+        this.setDefaultConfigurations(dataType);
+        this.configChanged.emit(this.inpConfigObject["kendoConfig"]);
     }
 }
