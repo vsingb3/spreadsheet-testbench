@@ -5162,7 +5162,7 @@ span.k-numerictextbox {
   background-image: none;
 }
 .k-flatcolorpicker .k-selected-color {
-  background-image: url(./assets/kendo/images/transtexture.png);
+  background-image: url(/assets/kendo/images/transtexture.png);
   background-position: 50% 50%;
   text-align: right;
 }
@@ -5277,7 +5277,7 @@ span.k-numerictextbox {
   background: linear-gradient(to right, #ff0000 0%, #ffff00 16%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 84%, #ff0004 100%);
 }
 .k-flatcolorpicker .k-transparency-slider .k-slider-track {
-  background-image: url(./assets/kendo/images/transparency.png);
+  background-image: url(/assets/kendo/images/transparency.png);
   background-size: 100% auto;
   background-position: 100% 50%;
   background-repeat: no-repeat;
@@ -10074,8 +10074,8 @@ div.k-navigator .k-navigator-left {
 */
 @font-face {
   font-family: 'WebComponentsIcons';
-  src: url(./assets/kendo/fonts/WebComponentsIcons.eot);
-  src: url(./assets/kendo/fonts/WebComponentsIcons.eot#iefix) format('embedded-opentype'), url(./assets/kendo/fonts/WebComponentsIcons.ttf) format('truetype'), url(./assets/kendo/fonts/WebComponentsIcons.woff) format('woff'), url(./assets/kendo/fonts/WebComponentsIcons.svg#WebComponentsIcons) format('svg');
+  src: url(/assets/kendo/fonts/WebComponentsIcons.eot);
+  src: url(/assets/kendo/fonts/WebComponentsIcons.eot#iefix) format('embedded-opentype'), url(/assets/kendo/fonts/WebComponentsIcons.ttf) format('truetype'), url(/assets/kendo/fonts/WebComponentsIcons.woff) format('woff'), url(/assets/kendo/fonts/WebComponentsIcons.svg#WebComponentsIcons) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -12835,65 +12835,65 @@ div.k-spreadsheet-window {
 /* sans-serif */
 @font-face {
   font-family: "DejaVu Sans";
-  src: url(./assets/kendo/fonts/DejaVuSans.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSans.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Sans";
   font-weight: bold;
-  src: url(./assets/kendo/fonts/DejaVuSans-Bold.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSans-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Sans";
   font-style: italic;
-  src: url(./assets/kendo/fonts/DejaVuSans-Oblique.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSans-Oblique.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Sans";
   font-weight: bold;
   font-style: italic;
-  src: url(./assets/kendo/fonts/DejaVuSans-BoldOblique.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSans-BoldOblique.ttf) format("truetype");
 }
 /* serif */
 @font-face {
   font-family: "DejaVu Serif";
-  src: url(./assets/kendo/fonts/DejaVuSerif.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSerif.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Serif";
   font-weight: bold;
-  src: url(./assets/kendo/fonts/DejaVuSerif-Bold.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSerif-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Serif";
   font-style: italic;
-  src: url(./assets/kendo/fonts/DejaVuSerif-Italic.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSerif-Italic.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Serif";
   font-weight: bold;
   font-style: italic;
-  src: url(./assets/kendo/fonts/DejaVuSerif-BoldItalic.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSerif-BoldItalic.ttf) format("truetype");
 }
 /* monospace */
 @font-face {
   font-family: "DejaVu Mono";
-  src: url(./assets/kendo/fonts/DejaVuSansMono.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSansMono.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Mono";
   font-weight: bold;
-  src: url(./assets/kendo/fonts/DejaVuSansMono-Bold.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSansMono-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Mono";
   font-style: italic;
-  src: url(./assets/kendo/fonts/DejaVuSansMono-Oblique.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSansMono-Oblique.ttf) format("truetype");
 }
 @font-face {
   font-family: "DejaVu Mono";
   font-weight: bold;
   font-style: italic;
-  src: url(./assets/kendo/fonts/DejaVuSansMono-BoldOblique.ttf) format("truetype");
+  src: url(/assets/kendo/fonts/DejaVuSansMono-BoldOblique.ttf) format("truetype");
 }
 .kendo-pdf-hide-pseudo-elements:before,
 .kendo-pdf-hide-pseudo-elements:after {
@@ -13020,7 +13020,7 @@ div.k-spreadsheet-window {
   color: #fff;
 }
 .ktb-var-normal-gradient {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.0) 100%);
 }
 .ktb-var-normal-text-color {
@@ -13030,7 +13030,7 @@ div.k-spreadsheet-window {
   color: #bcb4b0;
 }
 .ktb-var-hover-gradient {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.4) 0%, rgba(255,255,255,.0) 100%);
 }
 .ktb-var-hover-text-color {
@@ -13040,7 +13040,7 @@ div.k-spreadsheet-window {
   color: #939393;
 }
 .ktb-var-selected-gradient {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.2) 0%, rgba(255,255,255,.0) 100%);
 }
 .ktb-var-selected-text-color {
@@ -13275,7 +13275,7 @@ textarea.k-textbox:hover,
 .k-tabstrip-items .k-item,
 .k-panelbar .k-tabstrip-items .k-item,
 .km-pane-wrapper > .km-pane > .km-view > .km-content {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.0) 100%);
   background-position: 50% 50%;
   background-color: #eae8e8;
@@ -13332,7 +13332,7 @@ html .km-pane-wrapper .k-header {
 .k-mobile-list .k-check:checked,
 .k-mobile-list .k-edit-field [type=checkbox]:checked,
 .k-mobile-list .k-edit-field [type=radio]:checked {
-  background-image: url(./assets/kendo/images/sprite.png);
+  background-image: url(/assets/kendo/images/sprite.png);
   border-color: transparent;
 }
 .k-mobile-list .k-check:checked,
@@ -13345,10 +13345,10 @@ html .km-pane-wrapper .k-header {
   content: "\E118";
 }
 .k-i-loading {
-  background-image: url(./assets/kendo/images/loading.gif);
+  background-image: url(/assets/kendo/images/loading.gif);
 }
 .k-loading-image {
-  background-image: url(./assets/kendo/images/loading-image.gif);
+  background-image: url(/assets/kendo/images/loading-image.gif);
 }
 .k-loading-color {
   background-color: #ffffff;
@@ -13466,7 +13466,7 @@ html .km-pane-wrapper .k-header {
   color: #000;
   background-color: transparent;
   border-color: #f85a00;
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.2) 0%, rgba(255,255,255,.0) 100%);
 }
 .k-menu .k-link.k-state-active {
@@ -13479,7 +13479,7 @@ html .km-pane-wrapper .k-header {
   color: #2e2e2e;
   background-color: #bcb4b0;
   border-color: #b6b6b6;
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.4) 0%, rgba(255,255,255,.0) 100%);
 }
 .k-state-highlight {
@@ -13666,7 +13666,7 @@ td.k-state-focused.k-state-selected {
 div.k-filebrowser-dropzone em,
 .k-draghandle:hover,
 .k-listbox .k-item:hover:not(.k-state-disabled) {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.4) 0%, rgba(255,255,255,.0) 100%);
 }
 .k-pager-wrap {
@@ -13684,7 +13684,7 @@ div.k-filebrowser-dropzone em,
 }
 .k-state-selected,
 .k-draghandle.k-state-selected:hover {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.2) 0%, rgba(255,255,255,.0) 100%);
 }
 .k-draghandle.k-state-selected:hover {
@@ -13702,7 +13702,7 @@ div.k-filebrowser-dropzone em {
   color: #2e2e2e;
 }
 .km-pane-wrapper .km-pane .k-mobile-list.k-filter-menu .k-space-right {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.0) 100%);
   background-position: 50% 50%;
   background: #ececec;
@@ -13753,7 +13753,7 @@ div.k-filebrowser-dropzone em {
 }
 /* Progressbar */
 .k-progressbar-indeterminate {
-  background: url(./assets/kendo/images/indeterminate.gif);
+  background: url(/assets/kendo/images/indeterminate.gif);
 }
 .k-progressbar-indeterminate .k-progress-status-wrap,
 .k-progressbar-indeterminate .k-state-selected {
@@ -13767,16 +13767,16 @@ div.k-filebrowser-dropzone em {
   background-color: transparent;
 }
 .k-slider-horizontal .k-tick {
-  background-image: url(./assets/kendo/images/slider-h.gif);
+  background-image: url(/assets/kendo/images/slider-h.gif);
 }
 .k-slider-vertical .k-tick {
-  background-image: url(./assets/kendo/images/slider-v.gif);
+  background-image: url(/assets/kendo/images/slider-v.gif);
 }
 /* Tooltip */
 .k-widget.k-tooltip,
 .k-chart-crosshair-tooltip,
 .k-chart-shared-tooltip {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.0) 100%);
   background-position: 50% 50%;
   background-color: #eae8e8;
@@ -13949,7 +13949,7 @@ div.k-filebrowser-dropzone em {
 }
 .k-grid tr:hover {
   background-color: #bdb4af;
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.4) 0%, rgba(255,255,255,.0) 100%);
   background-position: 50% 50%;
 }
@@ -14041,7 +14041,7 @@ div.k-filebrowser-dropzone em {
   background-color: #e4e4e4;
 }
 .k-gantt .k-treelist tr:hover {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.0) 100%);
   background-color: #b9b3b3;
 }
@@ -14050,7 +14050,7 @@ div.k-filebrowser-dropzone em {
 .k-gantt .k-treelist .k-alt.k-state-selected,
 .k-gantt .k-treelist .k-alt.k-state-selected > td {
   background-color: transparent;
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.2) 0%, rgba(255,255,255,.0) 100%);
 }
 .k-gantt .k-treelist .k-state-selected:hover,
@@ -14413,7 +14413,7 @@ html .km-pane-wrapper .km-widget,
 .k-picker-wrap.k-state-default,
 .k-numeric-wrap.k-state-default,
 .k-dropdown-wrap.k-state-default {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.0) 100%);
   background-position: 50% 50%;
   background-color: #ececec;
@@ -14423,7 +14423,7 @@ html .km-pane-wrapper .km-widget,
 .k-numeric-wrap.k-state-hover,
 .k-dropdown-wrap.k-state-hover {
   background-color: #bdb4af;
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.4) 0%, rgba(255,255,255,.0) 100%);
   background-position: 50% 50%;
   border-color: #b6b6b6;
@@ -14446,7 +14446,7 @@ textarea.k-textbox,
 .k-numeric-wrap.k-state-focused,
 .k-dropdown-wrap.k-state-focused {
   background-color: #bdb4af;
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.4) 0%, rgba(255,255,255,.0) 100%);
   background-position: 50% 50%;
   border-color: #bdbdbd;
@@ -14640,7 +14640,7 @@ textarea.k-textbox,
   .k-ie11 .k-pager-numbers .k-current-page .k-link,
   .k-edge .k-pager-numbers .k-current-page .k-link,
   .k-safari .k-pager-numbers .k-current-page .k-link {
-    background-image: url(./assets/kendo/images/highlight.png);
+    background-image: url(/assets/kendo/images/highlight.png);
     background-image: none, linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,.0) 100%);
     background-position: 50% 50%;
     background-color: #ececec;
@@ -14719,7 +14719,7 @@ textarea.k-textbox,
   .k-edge .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover,
   .k-safari .k-scheduler-toolbar > ul.k-scheduler-views > li.k-current-view:hover {
     border-color: #b6b6b6;
-    background-image: url(./assets/kendo/images/highlight.png);
+    background-image: url(/assets/kendo/images/highlight.png);
     background-image: none, linear-gradient(to bottom, rgba(255,255,255,.4) 0%, rgba(255,255,255,.0) 100%);
     background-color: #bcb4b0;
   }
@@ -15032,7 +15032,7 @@ textarea.k-textbox,
   border-color: #d5d5d5;
 }
 .k-spreadsheet-window .k-edit-field > input[type="radio"]:checked + .k-orientation-label {
-  background-image: url(./assets/kendo/images/highlight.png);
+  background-image: url(/assets/kendo/images/highlight.png);
   background-image: none, linear-gradient(to bottom, rgba(255,255,255,.2) 0%, rgba(255,255,255,.0) 100%);
   background-color: #f35800;
   color: #1f1f1f;
@@ -15202,14 +15202,14 @@ textarea.k-textbox,
 }
 .k-spreadsheet-selection-highlight .ewr-selection-ants-top,
 .k-spreadsheet-selection-highlight .ewr-selection-ants-bottom {
-  background-image: url(./assets/kendo/images/EwaAntH.gif);
+  background-image: url(/assets/kendo/images/EwaAntH.gif);
   height: 2px;
   left: 0;
   right: 0;
 }
 .k-spreadsheet-selection-highlight .ewr-selection-ants-right,
 .k-spreadsheet-selection-highlight .ewr-selection-ants-left {
-  background-image: url(./assets/kendo/images/EwaAntV.gif);
+  background-image: url(/assets/kendo/images/EwaAntV.gif);
   bottom: 0;
   top: 0;
   width: 2px;
@@ -15242,14 +15242,14 @@ textarea.k-textbox,
 }
 .k-selection-wrapper .ewr-selection-ants-top,
 .k-selection-wrapper .ewr-selection-ants-bottom {
-  background-image: url(./assets/kendo/images/EwaAntH.gif);
+  background-image: url(/assets/kendo/images/EwaAntH.gif);
   height: 2px;
   left: 0;
   right: 0;
 }
 .k-selection-wrapper .ewr-selection-ants-right,
 .k-selection-wrapper .ewr-selection-ants-left {
-  background-image: url(./assets/kendo/images/EwaAntV.gif);
+  background-image: url(/assets/kendo/images/EwaAntV.gif);
   bottom: 0;
   top: 0;
   width: 2px;
@@ -15478,10 +15478,10 @@ textarea.k-textbox,
   border: none;
 }
 .k-widget .k-spreadsheet-view .k-spreadsheet-fixed-container .k-spreadsheet-row-header {
-  cursor: url(./assets/kendo/images/RightArrow.cur), cell !important;
+  cursor: url(/assets/kendo/images/RightArrow.cur), cell !important;
 }
 .k-widget .k-spreadsheet-view .k-spreadsheet-fixed-container .k-spreadsheet-column-header {
-  cursor: url(./assets/kendo/images/DownArrow.cur), cell !important;
+  cursor: url(/assets/kendo/images/DownArrow.cur), cell !important;
 }
 .k-widget .k-spreadsheet-view .k-spreadsheet-fixed-container .k-resize-hint .k-resize-hint-handle {
   display: none;
