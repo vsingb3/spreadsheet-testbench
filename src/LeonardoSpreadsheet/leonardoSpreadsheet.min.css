@@ -15486,6 +15486,9 @@ textarea.k-textbox,
 .k-widget .k-spreadsheet-view .k-spreadsheet-fixed-container .k-resize-hint .k-resize-hint-handle {
   display: none;
 }
+.k-widget .k-spreadsheet-view .k-spreadsheet-cell-editor .k-syntax-startexp {
+  font-weight: normal;
+}
 .k-widget .k-spreadsheet-sheets-bar .k-button-icon {
   height: calc(1.72em + 6px);
   width: calc(1.72em + 6px);
