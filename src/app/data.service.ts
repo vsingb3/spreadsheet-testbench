@@ -442,6 +442,7 @@ export class DataService {
                     "sheets": {
                         "0": {
                             "name": "Sheet1",
+                            "id": "id1",
                             "selection": "C1:C1",
                             "activeCell": "C1:C1",
                             "frozenRows": 0,
@@ -2723,6 +2724,7 @@ export class DataService {
                     "sheets": {
                         "0": {
                             "name": "Sheet2",
+                            "id": "id3",
                             "selection": "A1:A1",
                             "activeCell": "A1:A1",
                             "frozenRows": 0,
@@ -5360,6 +5362,7 @@ export class DataService {
                   "sheets": {
                     "0": {
                       "name": "Solution",
+                      "id": "id2",
                       "selection": "A1:C1",
                       "activeCell": "A1:C1",
                       "frozenRows": 0,
