@@ -75,14 +75,14 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
     getDefaultGridLineValue(inputJson){
         let spreadsheets = inputJson["grid"]["sheets"];
         let activesheetName = inputJson["grid"]["activeSheet"];
-        let activesheetIndex = 0;
-        for(let sheet =0;sheet<spreadsheets.length;sheet++){
-          if(activesheetName == spreadsheets[sheet]["name"]){
-            activesheetIndex = sheet;
-            break;
-          }
-        }
-        return inputJson.grid.sheets[activesheetIndex].showGridLines;
+        let showGridLines;
+        Object.keys(spreadsheets).some( function (value){
+            if(activesheetName == spreadsheets[value]["name"]){
+                showGridLines = inputJson.grid.sheets[value].showGridLines;
+                return true;
+            }
+          });
+        return showGridLines;
     }
 
     setExtractorOutput() {
@@ -107,5 +107,10 @@ export class SpreadsheetConfiguratorComponent implements OnInit, AfterViewInit {
         this.changeJsonEvent.emit(dataType);
         this.setDefaultConfigurations(dataType);
         this.configChanged.emit(this.inpConfigObject["kendoConfig"]);
+    }
+
+    activeSheetChanged(currentState){
+        let showGridLines = this.getDefaultGridLineValue(currentState);
+        this.inpConfigObject["kendoConfig"].showGridLines = showGridLines;
     }
 }

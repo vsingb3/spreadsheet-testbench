@@ -14,7 +14,7 @@
     </div>
     <div class="tooglebar"><button class="togglePaneButton" (click) = "toggleConfiguratorPane(!configuratorVisible)">{{toogleBtnText}}</button></div>
     <div class="spreadsheetpane">
-      <app-workspace #workspace class="workspaceWrapper" [kendoConfig]='kendoConfig'></app-workspace>
+      <app-workspace #workspace class="workspaceWrapper" [kendoConfig]='kendoConfig' (activeSheetChanged)="activeSheetChangedListener($event)"></app-workspace>
     </div>
   </div>
 </div>

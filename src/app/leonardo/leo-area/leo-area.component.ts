@@ -26,6 +26,10 @@ export class LeoAreaComponent implements OnInit {
     this.configuratorJSON = this.questionConfig["configuratorJSON"];
     this.kendoConfig = this.questionConfig["kendoConfig"];
   }
+  
+  activeSheetChangedListener(currentState){
+    this.spreadsheetConfigurator.activeSheetChanged(currentState);
+  }
 
   configChangedListener(configJSON) {
     this.workspace.showChanges(configJSON);

@@ -12,6 +12,7 @@ declare var LeonardoSpreadsheet: any;
 export class WorkspaceComponent implements OnInit, AfterViewInit {
   @Input() kendoConfig: any;
   @ViewChild('leoHost') leoHost: ElementRef;
+  @Output() activeSheetChanged: EventEmitter<any> = new EventEmitter();
   spreadsheet;
   configMap:any;
   container:any;
@@ -60,15 +61,15 @@ export class WorkspaceComponent implements OnInit, AfterViewInit {
     let newjson = args[0];
     let spreadsheets = newjson["grid"]["sheets"];
     let activesheetName = newjson["grid"]["activeSheet"];
-    let activesheetIndex = 0;
-    for(let sheet =0;sheet<spreadsheets.length;sheet++){
-      if(activesheetName == spreadsheets[sheet]["name"]){
-        activesheetIndex = sheet;
-        break;
-      }
-    }
     let configparam = args[1].showGridLines;
-    newjson.grid.sheets[activesheetIndex].showGridLines = configparam;
+
+    Object.keys(spreadsheets).some( function (value){
+      if(activesheetName == spreadsheets[value]["name"]){
+        newjson.grid.sheets[value].showGridLines = configparam;
+        return true;
+      }
+    });
+
     return newjson;
   }
 
@@ -85,11 +86,15 @@ export class WorkspaceComponent implements OnInit, AfterViewInit {
   intialiseSpreadsheet(inputJson?) {
     this.currentConfig = inputJson || this.kendoConfig["json"]["json1"];
     this.spreadsheet = new LeonardoSpreadsheet("WB1",this.container,{config:this.currentConfig,
-      events:{},
+      events:{ activeSheetChanged:this.activeSheetChangedHandler.bind(this) },
       uiStyle: {
         horizontalAlignment: 'center'
       }});
     this.spreadsheet.init();
+  }
+
+  activeSheetChangedHandler(sheetName){
+    this.activeSheetChanged.emit(this.spreadsheet.getState());
   }
 
 
